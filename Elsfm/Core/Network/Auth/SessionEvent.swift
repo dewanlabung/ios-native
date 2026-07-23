@@ -1,0 +1,3 @@
+enum SessionEvent {
+    case expired
+}
