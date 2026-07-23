@@ -4,21 +4,21 @@ struct AuthApi {
     private let client: ApiClient
     init(client: ApiClient) { self.client = client }
 
-    func login(email: String, password: String, tokenName: String) async -> ApiResult<User> {
+    func login(email: String, password: String, tokenName: String) async -> ApiResult<LoginResponse> {
         await client.post(
             "api/v1/auth/login",
             body: LoginRequest(email: email, password: password, tokenName: tokenName)
         )
     }
 
-    func loginWithGoogle(googleAccessToken: String, tokenName: String) async -> ApiResult<User> {
+    func loginWithGoogle(googleAccessToken: String, tokenName: String) async -> ApiResult<LoginResponse> {
         await client.get("api/v1/auth/social/google/callback", queryItems: [
             URLQueryItem(name: "tokenFromApi", value: googleAccessToken),
             URLQueryItem(name: "tokenForDevice", value: tokenName)
         ])
     }
 
-    func register(email: String, password: String, tokenName: String) async -> ApiResult<User> {
+    func register(email: String, password: String, tokenName: String) async -> ApiResult<LoginResponse> {
         await client.post(
             "api/v1/auth/register",
             body: RegisterBody(email: email, password: password, tokenName: tokenName)
@@ -32,10 +32,17 @@ struct AuthApi {
         )
     }
 
-    func verifyEmail(code: String, email: String) async -> ApiResult<Void> {
+    func sendOtp(email: String) async -> ApiResult<Void> {
         await client.post(
-            "api/v1/auth/email/verify",
-            body: VerifyEmailRequest(code: code, email: email)
+            "api/v1/auth/send-otp",
+            body: SendOtpRequest(email: email)
+        )
+    }
+
+    func verifyOtp(email: String, otp: String) async -> ApiResult<Void> {
+        await client.post(
+            "api/v1/auth/verify-otp",
+            body: VerifyOtpRequest(email: email, otp: otp)
         )
     }
 
@@ -54,6 +61,10 @@ struct AuthApi {
                 passwordConfirmation: passwordConfirm
             )
         )
+    }
+
+    func logout() async -> ApiResult<Void> {
+        await client.post("api/v1/auth/logout")
     }
 }
 
@@ -79,7 +90,11 @@ private struct RegisterBody: Encodable {
     }
 }
 
-private struct VerifyEmailRequest: Encodable {
-    let code: String
+private struct SendOtpRequest: Encodable {
     let email: String
+}
+
+private struct VerifyOtpRequest: Encodable {
+    let email: String
+    let otp: String
 }

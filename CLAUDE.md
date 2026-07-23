@@ -1,5 +1,13 @@
 # CLAUDE.md — Elsfm iOS Native
 
+## Skills — Load These First
+
+Before exploring this codebase, invoke these skills:
+- `/elsfm-ios-build` — iOS build config, module map, critical architecture rules
+- `/elsfm-api-endpoints` — All Laravel API endpoint paths + request/response shapes
+- `/elsfm-features` — Complete feature inventory (smart features, tabs, OTP flow)
+- `/elsfm-laravel-integration` — Response envelope format `{"data": ...}`
+
 ## Project Overview
 
 iOS native port of `elsfm-native` (Android/Kotlin). Shares the same Laravel backend at `https://www.elsfm.com/api/v1/`.
@@ -40,6 +48,7 @@ Elsfm/Features/Downloads/— DownloadsView
 Elsfm/Features/Subscriptions/— SubscriptionsView (StoreKit 2)
 Elsfm/Features/Notifications/— NotificationsView
 Elsfm/Features/Comments/— CommentsView
+Elsfm/Features/Settings/— SettingsView (change password, sign out, dark mode toggle)
 ```
 
 ## Key Patterns
@@ -102,7 +111,11 @@ Task {
 - Base URL: `https://www.elsfm.com/`
 - All endpoints: `api/v1/…`
 - Auth: `Authorization: Bearer <token>` header
+- **ALL responses wrapped in `{"data": ...}` envelope** — ApiClient handles this via `DataResponse<T>`, never decode `T` directly
 - Errors: 422 → `{errors: {field: [msgs]}}`, 401/403 → session expired
+- Home: `GET /api/v1/channel` (NOT /discovery) → returns `[Channel]`
+- OTP: `POST /api/v1/auth/send-otp` + `POST /api/v1/auth/verify-otp`
+- Play logging: `POST /api/v1/tracks/{id}/plays` on every track start
 
 ## Android Counterpart
 

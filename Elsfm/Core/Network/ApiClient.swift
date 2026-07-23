@@ -6,6 +6,12 @@ private struct ValidationErrorResponse: Decodable {
     let errors: [String: [String]]
 }
 
+/// Unwraps the `{"data": ...}` envelope that the ELSFM Laravel API
+/// wraps around every successful response body.
+struct DataResponse<T: Decodable>: Decodable {
+    let data: T
+}
+
 // MARK: - ApiClient
 
 final class ApiClient {
@@ -80,8 +86,8 @@ final class ApiClient {
             switch httpResponse.statusCode {
             case 200...299:
                 do {
-                    let decoded = try decoder.decode(T.self, from: data)
-                    return .success(decoded)
+                    let envelope = try decoder.decode(DataResponse<T>.self, from: data)
+                    return .success(envelope.data)
                 } catch {
                     return .networkError(error)
                 }

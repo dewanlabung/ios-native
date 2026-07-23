@@ -25,6 +25,10 @@ struct TrackApi {
     func getTrackLyrics(id: Int) async -> ApiResult<TrackLyrics> {
         await client.get("api/v1/tracks/\(id)/lyrics")
     }
+
+    func logPlay(trackId: Int) async -> ApiResult<Void> {
+        await client.post("api/v1/tracks/\(trackId)/plays")
+    }
 }
 
 // MARK: - Models

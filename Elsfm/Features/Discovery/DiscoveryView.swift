@@ -1,27 +1,11 @@
 import SwiftUI
 
-// MARK: - DiscoveryView
-
-/// Root view for the Discovery tab.
-///
-/// Displays server-curated sections of tracks, albums, and artists in a
-/// vertical scroll view. Each section renders a title followed by a horizontal
-/// scroll row of the appropriate card type.
-///
-/// The view model is created lazily on first appear so it can access the
-/// injected `ApiClient` from the environment.
 struct DiscoveryView: View {
-
-    // MARK: - Environment
 
     @Environment(\.apiClient) private var apiClient
     @Environment(PlaybackService.self) private var playbackService
 
-    // MARK: - State
-
     @State private var viewModel: DiscoveryViewModel?
-
-    // MARK: - Body
 
     var body: some View {
         Group {
@@ -38,31 +22,27 @@ struct DiscoveryView: View {
         .onFirstAppear {
             let vm = DiscoveryViewModel(apiClient: apiClient)
             viewModel = vm
-            vm.loadSections()
+            vm.loadChannels()
         }
     }
-
-    // MARK: - Content states
 
     @ViewBuilder
     private func content(for viewModel: DiscoveryViewModel) -> some View {
-        if viewModel.isLoading && viewModel.sections.isEmpty {
+        if viewModel.isLoading && viewModel.channels.isEmpty {
             ProgressView()
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-        } else if let errorMessage = viewModel.error, viewModel.sections.isEmpty {
+        } else if let errorMessage = viewModel.error, viewModel.channels.isEmpty {
             errorState(message: errorMessage, viewModel: viewModel)
         } else {
-            sectionList(for: viewModel)
+            channelList(for: viewModel)
         }
     }
 
-    // MARK: - Section list
-
-    private func sectionList(for viewModel: DiscoveryViewModel) -> some View {
+    private func channelList(for viewModel: DiscoveryViewModel) -> some View {
         ScrollView {
             LazyVStack(alignment: .leading, spacing: 32) {
-                ForEach(viewModel.sections) { section in
-                    sectionBlock(section: section)
+                ForEach(viewModel.channels) { channel in
+                    channelBlock(channel: channel)
                 }
             }
             .padding(.vertical, 20)
@@ -70,31 +50,21 @@ struct DiscoveryView: View {
         .scrollIndicators(.hidden)
     }
 
-    // MARK: - Section block
-
     @ViewBuilder
-    private func sectionBlock(section: DiscoverySection) -> some View {
+    private func channelBlock(channel: Channel) -> some View {
         VStack(alignment: .leading, spacing: 12) {
-            // Section title
-            Text(section.name)
+            Text(channel.name)
                 .font(.elsfmTitle)
                 .foregroundStyle(Color.elsfmText)
                 .padding(.horizontal, 20)
 
-            // Section content — pick the appropriate card row
-            if let tracks = section.tracks, !tracks.isEmpty {
+            if let tracks = channel.tracks, !tracks.isEmpty {
                 TrackSectionView(tracks: tracks) { track in
                     playbackService.play(track: track)
                 }
-            } else if let albums = section.albums, !albums.isEmpty {
-                AlbumSectionView(albums: albums)
-            } else if let artists = section.artists, !artists.isEmpty {
-                ArtistSectionView(artists: artists)
             }
         }
     }
-
-    // MARK: - Error state
 
     private func errorState(message: String, viewModel: DiscoveryViewModel) -> some View {
         VStack(spacing: 16) {
@@ -109,7 +79,7 @@ struct DiscoveryView: View {
                 .padding(.horizontal, 40)
 
             Button {
-                viewModel.loadSections()
+                viewModel.loadChannels()
             } label: {
                 Text("Retry")
                     .font(.elsfmBody)
@@ -124,8 +94,6 @@ struct DiscoveryView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
-
-// MARK: - Preview
 
 #if DEBUG
 #Preview {

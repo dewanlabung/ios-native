@@ -23,15 +23,6 @@ struct NotificationsApi {
     }
 }
 
-// MARK: - Models
-
-struct AppNotification: Codable, Identifiable {
-    let id: Int
-    let type: String
-    let readAt: String?
-    let createdAt: String
-}
-
 // MARK: - Private Request Bodies
 
 private struct PushTokenRequest: Encodable {

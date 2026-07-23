@@ -2,66 +2,50 @@ import Foundation
 
 // MARK: - DiscoveryViewModel
 
-/// View model for the Discovery tab.
-///
-/// Fetches discovery sections from the API and exposes them to the view.
-/// Section content can contain tracks, albums, or artists depending on the
-/// section type returned by the server.
 @Observable
 @MainActor
 final class DiscoveryViewModel {
 
     // MARK: - State
 
-    var sections: [DiscoverySection] = []
+    var channels: [Channel] = []
     var isLoading = false
     var error: String?
 
     // MARK: - Dependencies
 
-    private let apiClient: ApiClient
-
-    /// Exposed for child views that need to enqueue individual tracks.
-    let channelApi: ChannelApi
-
-    /// Exposed for child views that need track-level actions (like, lyrics).
+    private let channelApi: ChannelApi
     let trackApi: TrackApi
 
     // MARK: - Init
 
     init(apiClient: ApiClient) {
-        self.apiClient = apiClient
         self.channelApi = ChannelApi(client: apiClient)
         self.trackApi = TrackApi(client: apiClient)
     }
 
     // MARK: - Actions
 
-    /// Fetches `GET api/v1/discovery` and populates `sections`.
-    ///
-    /// Safe to call multiple times — subsequent calls replace the previous
-    /// result. Idempotent while a request is already in-flight (the previous
-    /// `isLoading` state is overwritten, not checked).
-    func loadSections() {
+    func loadChannels() {
         Task {
             isLoading = true
             error = nil
             defer { isLoading = false }
 
-            let result: ApiResult<DiscoverySections> = await apiClient.get("api/v1/discovery")
+            let result: ApiResult<[Channel]> = await channelApi.getChannels()
 
             switch result {
-            case .success(let data):
-                sections = data.sections
+            case .success(let list):
+                channels = list
 
             case .networkError(let err):
                 error = err.localizedDescription
 
             case .validationError:
-                error = "Failed to load discovery content."
+                error = "Failed to load content."
 
             case .unauthorized:
-                error = "Please sign in to view discovery content."
+                error = "Please sign in to continue."
             }
         }
     }

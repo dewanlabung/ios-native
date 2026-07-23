@@ -17,12 +17,12 @@ final class LoginViewModel {
 
     // MARK: - Dependencies
 
-    private let authApi: AuthApi
+    private let authApi: any AuthApiProtocol
     private let sessionManager: SessionManager
 
     // MARK: - Init
 
-    init(authApi: AuthApi, sessionManager: SessionManager) {
+    init(authApi: any AuthApiProtocol, sessionManager: SessionManager) {
         self.authApi = authApi
         self.sessionManager = sessionManager
     }
@@ -42,11 +42,8 @@ final class LoginViewModel {
             )
 
             switch result {
-            case .success:
-                // NOTE: AuthApi.login returns ApiResult<User>, which does not expose the
-                // server-issued token. Once the API is updated to return ApiResult<UserSessionInfo>,
-                // replace the call below with: await sessionManager.saveToken(info.token)
-                await sessionManager.saveToken(UIDevice.current.name)
+            case .success(let response):
+                await sessionManager.saveToken(response.token)
 
             case .validationError(let fieldErrors):
                 errors = fieldErrors
@@ -83,8 +80,8 @@ final class LoginViewModel {
                 )
 
                 switch result {
-                case .success:
-                    await sessionManager.saveToken(UIDevice.current.name)
+                case .success(let response):
+                    await sessionManager.saveToken(response.token)
 
                 case .validationError(let fieldErrors):
                     errors = fieldErrors

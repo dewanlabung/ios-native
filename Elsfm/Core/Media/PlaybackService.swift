@@ -38,9 +38,17 @@ final class PlaybackService {
 
     private(set) lazy var sleepTimer = SleepTimer(playerState: state)
 
+    // MARK: - Private: API
+
+    private let trackApi: TrackApi
+    /// Guards against double-logging when AVQueuePlayer KVO and handleItemPlayedToEnd
+    /// both call updateStateForCurrentTrack for the same auto-advance.
+    private var lastLoggedTrackId: Int?
+
     // MARK: - Init
 
     private init() {
+        trackApi = TrackApi(client: ApiClient())
         configureAudioSession()
         attachPeriodicTimeObserver()
         attachPlayerObservations()
@@ -226,6 +234,15 @@ final class PlaybackService {
         state.positionMs = 0
         state.durationMs = Double(track.durationMs)
         updateNowPlaying(track: track)
+        logPlayIfNeeded(for: track)
+    }
+
+    private func logPlayIfNeeded(for track: Track) {
+        guard track.id != lastLoggedTrackId else { return }
+        lastLoggedTrackId = track.id
+        Task {
+            await trackApi.logPlay(trackId: track.id)
+        }
     }
 
     // MARK: - Private: AVPlayer observations
