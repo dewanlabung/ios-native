@@ -20,10 +20,12 @@
 		146D1F4AF4715F3A03149E27 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6069CDB0A775D8A7A2ACDF /* NotificationsView.swift */; };
 		15EE4B1225E532C899C0CFFE /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6B380DF5FF60F7F499CE23 /* RootView.swift */; };
 		15FE5CF5B8BBB444C961E049 /* ElsfmNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8192E408EFB54B7E4ACE11 /* ElsfmNavigation.swift */; };
+		171F33A58ADD6DC0735B05BE /* DebugBridgeUI in Frameworks */ = {isa = PBXBuildFile; productRef = 973AB21E2633A32A089632C8 /* DebugBridgeUI */; };
 		1A23489C696AEA9B94F38913 /* LyricsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F01A0E57561F4C597CF0AFB /* LyricsApi.swift */; };
 		1B54CAF40B572511CB191E63 /* DiscoverySections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDDA7506872FC6CAA62E07F /* DiscoverySections.swift */; };
 		1B6FD4867155E7374B875ED6 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 04AD34E22EC7D8F58E4E7929 /* Kingfisher */; };
 		1B8761F0429E8A4D7E696BFB /* NotificationsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6967DC9825F1920AC8EBCC /* NotificationsApi.swift */; };
+		1BC877881B4C9216A6C4884B /* DebugBridgeWiring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA06511D366702908BD252F /* DebugBridgeWiring.swift */; };
 		2178F7065AC5F5DA5660EF70 /* SessionsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D9DA68B86C2BB8519FFEDF /* SessionsApi.swift */; };
 		21F8A5BC21F85F9B960A5B92 /* ElsfmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03EDC5B2846BA4C992CDC04 /* ElsfmApp.swift */; };
 		2256C7B5DBB62DB8C22BC8B2 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE8F33515377C5F339464F0 /* ApiError.swift */; };
@@ -104,6 +106,7 @@
 		D4B27BE6FC5499C939DF55B3 /* EmailVerifyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9606072B110727BA47E325 /* EmailVerifyViewModel.swift */; };
 		D60BC75E8C4FD14D74FAF122 /* SubscriptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAD1434254892BD26F25FDE /* SubscriptionsView.swift */; };
 		D60BF6B9468E0C34DD4A0F8D /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765C435071CBDF1B72065CF2 /* LoginResponse.swift */; };
+		D679F0148DC08CAB287A10D8 /* StateAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7340F39BA3837452C0529653 /* StateAccessor.swift */; };
 		D78AB4B4FD099622FA469347 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2868B6B1419BD974A1E9DF4C /* SettingsView.swift */; };
 		D8AFED44C78861306E3FBEF7 /* CompletePasswordResetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D0F02903AEFF66EF52A614 /* CompletePasswordResetRequest.swift */; };
 		D95E62ADD023B9948DBF772F /* FollowUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844321ED73BF214A6A319FCF /* FollowUser.swift */; };
@@ -170,6 +173,7 @@
 		38CF5C7C7A62F86314C481DA /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
 		3BB7C183608C595C0CC129C7 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		3D004BF16F612B2AC9799620 /* DownloadedTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadedTrack.swift; sourceTree = "<group>"; };
+		3DA06511D366702908BD252F /* DebugBridgeWiring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugBridgeWiring.swift; sourceTree = "<group>"; };
 		434B6F12E83D6423F8975A4E /* AccountApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountApi.swift; sourceTree = "<group>"; };
 		4AA69D8A77F23D8F48D7C190 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
 		4BE8F33515377C5F339464F0 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
@@ -199,6 +203,8 @@
 		6DDB289ACDFD117A6A19FBBD /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 		713333CC67996BE3E39A4676 /* DiscoveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryView.swift; sourceTree = "<group>"; };
 		733D2EF9492136CE8C8AB60F /* AppNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNotification.swift; sourceTree = "<group>"; };
+		7340F39BA3837452C0529653 /* StateAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateAccessor.swift; sourceTree = "<group>"; };
+		735FC06326F1208933423687 /* DebugBridge */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DebugBridge; path = Elsfm/DebugBridge; sourceTree = SOURCE_ROOT; };
 		765C435071CBDF1B72065CF2 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		768424E7BC822F28BC8F4FE0 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		768E1B7C775EB7343B31403A /* PasswordResetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetViewModel.swift; sourceTree = "<group>"; };
@@ -251,6 +257,7 @@
 		E77F319E572FBAE0D4E0B7C1 /* TrackContextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackContextMenu.swift; sourceTree = "<group>"; };
 		ED5FAAAD2688552037B9EC1A /* TrackCodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCodableTests.swift; sourceTree = "<group>"; };
 		F03EDC5B2846BA4C992CDC04 /* ElsfmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElsfmApp.swift; sourceTree = "<group>"; };
+		F1A815A24BFE3C95ABE161BF /* .gstack-version */ = {isa = PBXFileReference; path = ".gstack-version"; sourceTree = "<group>"; };
 		F351D58E96E9E64814FC05FE /* SleepTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTimer.swift; sourceTree = "<group>"; };
 		F3B85FD966608F43CC174081 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		F595D6A952859235F1612AEB /* EmailVerifyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailVerifyView.swift; sourceTree = "<group>"; };
@@ -266,6 +273,7 @@
 			files = (
 				1B6FD4867155E7374B875ED6 /* Kingfisher in Frameworks */,
 				5B4AE67354CA9C8229A2DF21 /* GoogleSignIn in Frameworks */,
+				171F33A58ADD6DC0735B05BE /* DebugBridgeUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +374,7 @@
 			children = (
 				76E7BF2F0C65DB32E2DD879B /* Elsfm */,
 				D5892891029BCDBE9A995158 /* ElsfmTests */,
+				B6813D976E7F76C15BDD54C0 /* Packages */,
 				6D6B0916EA84ED84155D5ECE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -383,6 +392,7 @@
 			isa = PBXGroup;
 			children = (
 				BFCF505298A21B720235E467 /* AuthRootView.swift */,
+				3DA06511D366702908BD252F /* DebugBridgeWiring.swift */,
 				F03EDC5B2846BA4C992CDC04 /* ElsfmApp.swift */,
 				0D8192E408EFB54B7E4ACE11 /* ElsfmNavigation.swift */,
 				DB43DB926E35E44E3F7BEA12 /* MainTabView.swift */,
@@ -450,6 +460,7 @@
 			children = (
 				27DAAFA91F9D84FD52E0D60C /* App */,
 				C02F4F5C5FF7487F4938FAE6 /* Core */,
+				CE4C506C6D629746DD6B939F /* DebugBridgeGenerated */,
 				E3A84F5C277A8C6177C0ED1A /* Features */,
 				157D4345505A5BC7D24083CB /* Resources */,
 			);
@@ -499,6 +510,14 @@
 				AAE644C288B8157F7964AC86 /* ProfileViewModel.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		B6813D976E7F76C15BDD54C0 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				735FC06326F1208933423687 /* DebugBridge */,
+			);
+			name = Packages;
 			sourceTree = "<group>";
 		};
 		BE4736D1A8CA76E846399B97 /* Comments */ = {
@@ -553,6 +572,15 @@
 				68102D757224B96C94DD0087 /* SignupViewModel.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		CE4C506C6D629746DD6B939F /* DebugBridgeGenerated */ = {
+			isa = PBXGroup;
+			children = (
+				F1A815A24BFE3C95ABE161BF /* .gstack-version */,
+				7340F39BA3837452C0529653 /* StateAccessor.swift */,
+			);
+			path = DebugBridgeGenerated;
 			sourceTree = "<group>";
 		};
 		D51A62D1EC607519609FDA2E /* Player */ = {
@@ -688,6 +716,7 @@
 			packageProductDependencies = (
 				04AD34E22EC7D8F58E4E7929 /* Kingfisher */,
 				AC0321B10097402397CE0678 /* GoogleSignIn */,
+				973AB21E2633A32A089632C8 /* DebugBridgeUI */,
 			);
 			productName = Elsfm;
 			productReference = 589A187B413A42B7AB5B49DB /* Elsfm.app */;
@@ -741,6 +770,7 @@
 			packageReferences = (
 				4B646C96F9B1684F5821B89E /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 				2CC45923AD22511C6318EB8C /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				F8CFE0EB173D71234143065D /* XCLocalSwiftPackageReference "Elsfm/DebugBridge" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6D6B0916EA84ED84155D5ECE /* Products */;
@@ -808,6 +838,7 @@
 				0F0CF025A0862770F41838E9 /* CommentsView.swift in Sources */,
 				ACC048224842B92A8327C61B /* CommentsViewModel.swift in Sources */,
 				D8AFED44C78861306E3FBEF7 /* CompletePasswordResetRequest.swift in Sources */,
+				1BC877881B4C9216A6C4884B /* DebugBridgeWiring.swift in Sources */,
 				1B54CAF40B572511CB191E63 /* DiscoverySections.swift in Sources */,
 				1030C7F0002D52EB580EDC4C /* DiscoveryView.swift in Sources */,
 				672615E4380BD596F222D00E /* DiscoveryViewModel.swift in Sources */,
@@ -875,6 +906,7 @@
 				F0ED20663D11C1E6F6A76948 /* SignupView.swift in Sources */,
 				B028C25A14AB8BF1CD6004B2 /* SignupViewModel.swift in Sources */,
 				5244ED5CC49AB270A379E94B /* SleepTimer.swift in Sources */,
+				D679F0148DC08CAB287A10D8 /* StateAccessor.swift in Sources */,
 				D60BC75E8C4FD14D74FAF122 /* SubscriptionsView.swift in Sources */,
 				7087BDC230FB60F47F63E1B8 /* SubscriptionsViewModel.swift in Sources */,
 				D42DD5CB60AC62C166EC03A3 /* Tag.swift in Sources */,
@@ -1128,6 +1160,13 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		F8CFE0EB173D71234143065D /* XCLocalSwiftPackageReference "Elsfm/DebugBridge" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Elsfm/DebugBridge;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
 		2CC45923AD22511C6318EB8C /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -1152,6 +1191,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2CC45923AD22511C6318EB8C /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		973AB21E2633A32A089632C8 /* DebugBridgeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DebugBridgeUI;
 		};
 		AC0321B10097402397CE0678 /* GoogleSignIn */ = {
 			isa = XCSwiftPackageProductDependency;

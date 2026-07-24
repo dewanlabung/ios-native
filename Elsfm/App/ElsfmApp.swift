@@ -55,6 +55,10 @@ struct ElsfmApp: App {
         apiClient = ApiClient(sessionManager: sm)
         modelContainer = container
         downloadsRepository = DownloadsRepository(context: container.mainContext)
+
+        #if DEBUG
+        startGstackDebugBridge(appState: (), register: { _ in })
+        #endif
     }
 
     // MARK: Scene

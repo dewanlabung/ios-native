@@ -22,6 +22,8 @@ packages:
   GoogleSignIn:
     url: https://github.com/google/GoogleSignIn-iOS
     from: "7.0.0"
+  DebugBridge:
+    path: Elsfm/DebugBridge
 
 targets:
   Elsfm:
@@ -29,6 +31,8 @@ targets:
     platform: iOS
     sources:
       - path: Elsfm
+        excludes:
+          - DebugBridge
     resources:
       - path: Elsfm/Resources
     settings:
@@ -39,6 +43,8 @@ targets:
     dependencies:
       - package: Kingfisher
       - package: GoogleSignIn
+      - package: DebugBridge
+        product: DebugBridgeUI
     info:
       path: Elsfm/Resources/Info.plist
       properties:
