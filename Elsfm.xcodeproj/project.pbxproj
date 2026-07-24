@@ -10,6 +10,7 @@
 		016663DEE29AC4597CF5560C /* MiniPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75E55E8E5A4D4597F831239 /* MiniPlayerView.swift */; };
 		040434F63DFAE68BEAB66679 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CC53F560252C8D7C58D5D6 /* Comment.swift */; };
 		071C831D46FED8CD352FC561 /* PasswordResetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E1B7C775EB7343B31403A /* PasswordResetViewModel.swift */; };
+		0AADA2D69DB643C6B2A15EF5 /* AlbumDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACA0FE59BF5F33FF403C4B7 /* AlbumDetailView.swift */; };
 		0D29CA95290B656EB9411A46 /* NotificationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12527E32B305645CD1E4330 /* NotificationsViewModel.swift */; };
 		0EEF5EB4DD920B47AC85CF10 /* AlbumApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9037B8D67388BD6D747A9239 /* AlbumApi.swift */; };
 		0F0CF025A0862770F41838E9 /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CF5C7C7A62F86314C481DA /* CommentsView.swift */; };
@@ -19,7 +20,6 @@
 		146D1F4AF4715F3A03149E27 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6069CDB0A775D8A7A2ACDF /* NotificationsView.swift */; };
 		15EE4B1225E532C899C0CFFE /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6B380DF5FF60F7F499CE23 /* RootView.swift */; };
 		15FE5CF5B8BBB444C961E049 /* ElsfmNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8192E408EFB54B7E4ACE11 /* ElsfmNavigation.swift */; };
-		171F33A58ADD6DC0735B05BE /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 35B99E22FCCAA66DD614A87E /* KeychainAccess */; };
 		1A23489C696AEA9B94F38913 /* LyricsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F01A0E57561F4C597CF0AFB /* LyricsApi.swift */; };
 		1B54CAF40B572511CB191E63 /* DiscoverySections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDDA7506872FC6CAA62E07F /* DiscoverySections.swift */; };
 		1B6FD4867155E7374B875ED6 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 04AD34E22EC7D8F58E4E7929 /* Kingfisher */; };
@@ -45,6 +45,7 @@
 		57F15E1FD67FBB4A5DA54388 /* TrackListApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870717FC9939296EF32360C7 /* TrackListApi.swift */; };
 		598B1C5ECBE124911AB0E761 /* RepostApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9EC6DB4A7998B9902D3980 /* RepostApi.swift */; };
 		5B05CF7882D64804505A7F40 /* ArtistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5498319D76F21704478663DB /* ArtistView.swift */; };
+		5B27D4A780BE920EF021DA72 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7C9CE5A2D1598952ABBC5D /* SettingsViewModel.swift */; };
 		5B4AE67354CA9C8229A2DF21 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = AC0321B10097402397CE0678 /* GoogleSignIn */; };
 		5DF5CC9345A5BD03AB28C85C /* PasswordResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D948D72543213CB174063A25 /* PasswordResetView.swift */; };
 		5EA4DAFFEAFB9F84FFC9F65A /* ProfileApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63426B799A7494852950F43C /* ProfileApi.swift */; };
@@ -103,6 +104,7 @@
 		D4B27BE6FC5499C939DF55B3 /* EmailVerifyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9606072B110727BA47E325 /* EmailVerifyViewModel.swift */; };
 		D60BC75E8C4FD14D74FAF122 /* SubscriptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAD1434254892BD26F25FDE /* SubscriptionsView.swift */; };
 		D60BF6B9468E0C34DD4A0F8D /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765C435071CBDF1B72065CF2 /* LoginResponse.swift */; };
+		D78AB4B4FD099622FA469347 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2868B6B1419BD974A1E9DF4C /* SettingsView.swift */; };
 		D8AFED44C78861306E3FBEF7 /* CompletePasswordResetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D0F02903AEFF66EF52A614 /* CompletePasswordResetRequest.swift */; };
 		D95E62ADD023B9948DBF772F /* FollowUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844321ED73BF214A6A319FCF /* FollowUser.swift */; };
 		DD14657D9463EC13D93C4B30 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D1826B96A5AAD9DA323757 /* User.swift */; };
@@ -158,6 +160,7 @@
 		24697AAEA9576E7BE1175F2B /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		25E7608E73B4F4FB17D8A94C /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		260A498EA8F59B970E14EAA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2868B6B1419BD974A1E9DF4C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		29A9A0EA9D33D692E91131AA /* Color+Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Tokens.swift"; sourceTree = "<group>"; };
 		2BFC62159B9FA98CD6180C6B /* TrackApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackApi.swift; sourceTree = "<group>"; };
 		2CF7FE4EFBC924AA0D947879 /* PlayerMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerMenuView.swift; sourceTree = "<group>"; };
@@ -179,8 +182,10 @@
 		58D1826B96A5AAD9DA323757 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		59A79565472768D51F970BE0 /* UserSessionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionInfo.swift; sourceTree = "<group>"; };
 		5A433B0F2CCE4958D6DBE9E7 /* CommentApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentApi.swift; sourceTree = "<group>"; };
+		5ACA0FE59BF5F33FF403C4B7 /* AlbumDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailView.swift; sourceTree = "<group>"; };
 		5CAD1434254892BD26F25FDE /* SubscriptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsView.swift; sourceTree = "<group>"; };
 		5E036E5B3BD0AE2F75E977D7 /* PlaybackService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackService.swift; sourceTree = "<group>"; };
+		5E7C9CE5A2D1598952ABBC5D /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		5F01A0E57561F4C597CF0AFB /* LyricsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsApi.swift; sourceTree = "<group>"; };
 		609A65B318A7FAB9D3DB51B3 /* PasswordResetRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetRequest.swift; sourceTree = "<group>"; };
 		60D0F02903AEFF66EF52A614 /* CompletePasswordResetRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletePasswordResetRequest.swift; sourceTree = "<group>"; };
@@ -261,7 +266,6 @@
 			files = (
 				1B6FD4867155E7374B875ED6 /* Kingfisher in Frameworks */,
 				5B4AE67354CA9C8229A2DF21 /* GoogleSignIn in Frameworks */,
-				171F33A58ADD6DC0735B05BE /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +436,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		75E21DB8F91A1372AE7DE7A2 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				2868B6B1419BD974A1E9DF4C /* SettingsView.swift */,
+				5E7C9CE5A2D1598952ABBC5D /* SettingsViewModel.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		76E7BF2F0C65DB32E2DD879B /* Elsfm */ = {
 			isa = PBXGroup;
 			children = (
@@ -450,6 +463,14 @@
 				6667DE9F725AFF018A342839 /* DownloadsViewModel.swift */,
 			);
 			path = Downloads;
+			sourceTree = "<group>";
+		};
+		859E4049E7916F54A40D75CB /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				5ACA0FE59BF5F33FF403C4B7 /* AlbumDetailView.swift */,
+			);
+			path = Album;
 			sourceTree = "<group>";
 		};
 		9A3A4A22CA977086CE11FBF9 /* Subscriptions */ = {
@@ -579,6 +600,7 @@
 		E3A84F5C277A8C6177C0ED1A /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				859E4049E7916F54A40D75CB /* Album */,
 				1181B6620C08C0C4FAA8E947 /* Artist */,
 				C7651A458AA14CD0017F4C24 /* Auth */,
 				BE4736D1A8CA76E846399B97 /* Comments */,
@@ -589,6 +611,7 @@
 				D51A62D1EC607519609FDA2E /* Player */,
 				B613B2E57B6A4FE78BA1F582 /* Profile */,
 				D6C6F514406964B47A262C7A /* Search */,
+				75E21DB8F91A1372AE7DE7A2 /* Settings */,
 				9A3A4A22CA977086CE11FBF9 /* Subscriptions */,
 				380D04188238C78C9E444C40 /* UserProfile */,
 			);
@@ -665,7 +688,6 @@
 			packageProductDependencies = (
 				04AD34E22EC7D8F58E4E7929 /* Kingfisher */,
 				AC0321B10097402397CE0678 /* GoogleSignIn */,
-				35B99E22FCCAA66DD614A87E /* KeychainAccess */,
 			);
 			productName = Elsfm;
 			productReference = 589A187B413A42B7AB5B49DB /* Elsfm.app */;
@@ -718,7 +740,6 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				4B646C96F9B1684F5821B89E /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
-				132CA9895CFDE603A3C52698 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 				2CC45923AD22511C6318EB8C /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			preferredProjectObjectVersion = 77;
@@ -762,6 +783,7 @@
 				3DDAF0D549BF54F4875A4C33 /* AccountApi.swift in Sources */,
 				69E2BDEB27EB6D2C327C38B9 /* Album.swift in Sources */,
 				0EEF5EB4DD920B47AC85CF10 /* AlbumApi.swift in Sources */,
+				0AADA2D69DB643C6B2A15EF5 /* AlbumDetailView.swift in Sources */,
 				DE478947A734AF8437DD8EB8 /* AlbumSectionView.swift in Sources */,
 				E2127238533B832AA522A2B1 /* ApiClient.swift in Sources */,
 				2256C7B5DBB62DB8C22BC8B2 /* ApiError.swift in Sources */,
@@ -847,6 +869,8 @@
 				BBA4C0AB591F54BD02189943 /* SessionEvent.swift in Sources */,
 				E08BE7FFAE7C90E98993EE30 /* SessionManager.swift in Sources */,
 				2178F7065AC5F5DA5660EF70 /* SessionsApi.swift in Sources */,
+				D78AB4B4FD099622FA469347 /* SettingsView.swift in Sources */,
+				5B27D4A780BE920EF021DA72 /* SettingsViewModel.swift in Sources */,
 				CBAD334E10CCC6409E504466 /* ShakeDetector.swift in Sources */,
 				F0ED20663D11C1E6F6A76948 /* SignupView.swift in Sources */,
 				B028C25A14AB8BF1CD6004B2 /* SignupViewModel.swift in Sources */,
@@ -1105,14 +1129,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		132CA9895CFDE603A3C52698 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kishikawakatsuki/KeychainAccess";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.2.2;
-			};
-		};
 		2CC45923AD22511C6318EB8C /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher";
@@ -1136,11 +1152,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2CC45923AD22511C6318EB8C /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
-		};
-		35B99E22FCCAA66DD614A87E /* KeychainAccess */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 132CA9895CFDE603A3C52698 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
-			productName = KeychainAccess;
 		};
 		AC0321B10097402397CE0678 /* GoogleSignIn */ = {
 			isa = XCSwiftPackageProductDependency;

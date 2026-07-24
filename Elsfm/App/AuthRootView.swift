@@ -30,30 +30,41 @@ enum AuthDestination: Hashable {
 /// server redirects without each child view needing direct stack access.
 struct AuthRootView: View {
 
-    // MARK: Navigation state
-
-    @State private var path = NavigationPath()
+    @Environment(SessionManager.self) private var sessionManager
+    @Environment(\.apiClient) private var apiClient
 
     // MARK: Body
 
     var body: some View {
-        NavigationStack(path: $path) {
-            LoginView(path: $path)
-                .navigationDestination(for: AuthDestination.self) { destination in
-                    switch destination {
-                    case .signup:
-                        SignupView(path: $path)
+        NavigationStack {
+            LoginView(
+                authApi: AuthApi(client: apiClient),
+                sessionManager: sessionManager
+            )
+            .navigationDestination(for: AuthDestination.self) { destination in
+                switch destination {
+                case .signup:
+                    SignupView(
+                        authApi: AuthApi(client: apiClient),
+                        sessionManager: sessionManager
+                    )
 
-                    case .emailVerify(let email):
-                        EmailVerifyView(email: email, path: $path)
+                case .emailVerify(let email):
+                    EmailVerifyView(
+                        viewModel: EmailVerifyViewModel(
+                            email: email,
+                            authApi: AuthApi(client: apiClient)
+                        )
+                    )
 
-                    case .passwordReset:
-                        PasswordResetView()
-                    }
+                case .passwordReset:
+                    PasswordResetView(
+                        authApi: AuthApi(client: apiClient),
+                        sessionManager: sessionManager
+                    )
                 }
+            }
         }
-        // Use the brand primary tint throughout auth screens (back chevrons,
-        // tappable text links, button highlights).
         .tint(Color.elsfmPrimary)
     }
 }

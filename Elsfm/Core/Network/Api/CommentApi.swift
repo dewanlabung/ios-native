@@ -22,17 +22,6 @@ struct CommentApi {
     }
 }
 
-// MARK: - Models
-
-struct Comment: Codable, Identifiable {
-    let id: Int
-    let trackId: Int
-    let userId: Int
-    let body: String
-    let createdAt: String
-    let user: User?
-}
-
 // MARK: - Private Request Bodies
 
 private struct PostCommentRequest: Encodable {

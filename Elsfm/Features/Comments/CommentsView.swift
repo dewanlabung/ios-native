@@ -2,7 +2,7 @@ import SwiftUI
 
 struct CommentsView: View {
     let trackId: Int
-    @Binding var isPresented: Bool
+    @Environment(\.dismiss) private var dismiss
     @State private var viewModel: CommentsViewModel?
     @Environment(\.apiClient) private var apiClient
 
@@ -45,7 +45,7 @@ struct CommentsView: View {
 
             Spacer()
 
-            Button(action: { isPresented = false }) {
+            Button(action: { dismiss() }) {
                 Image(systemName: "xmark")
                     .font(.system(size: 14, weight: .semibold))
                     .foregroundColor(.elsfmTextSecondary)
@@ -148,7 +148,7 @@ struct CommentsView: View {
     private func commentInputView(_ viewModel: CommentsViewModel) -> some View {
         VStack(spacing: 0) {
             HStack(spacing: 8) {
-                TextField("Add a comment...", text: $viewModel.newCommentText, axis: .vertical)
+                TextField("Add a comment...", text: Bindable(viewModel).newCommentText, axis: .vertical)
                     .font(.system(size: 14, weight: .regular))
                     .foregroundColor(.elsfmText)
                     .tint(.elsfmPrimary)
@@ -184,38 +184,21 @@ struct CommentsView: View {
     }
 
     private func userDisplayName(_ user: User?) -> String {
-        guard let user = user else { return "Anonymous" }
-        let firstName = user.firstName.trimmingCharacters(in: .whitespaces)
-        let lastName = user.lastName.trimmingCharacters(in: .whitespaces)
-
-        if !firstName.isEmpty && !lastName.isEmpty {
-            return "\(firstName) \(lastName)"
-        } else if !firstName.isEmpty {
-            return firstName
-        } else if !lastName.isEmpty {
-            return lastName
-        } else {
-            return "User"
+        guard let name = user?.name?.trimmingCharacters(in: .whitespaces), !name.isEmpty else {
+            return "Anonymous"
         }
+        return name
     }
 
     private func initials(for user: User?) -> String {
-        guard let user = user else { return "U" }
-        let firstName = user.firstName.trimmingCharacters(in: .whitespaces)
-        let lastName = user.lastName.trimmingCharacters(in: .whitespaces)
-
-        let firstInitial = firstName.prefix(1).uppercased()
-        let lastInitial = lastName.prefix(1).uppercased()
-
-        if !firstInitial.isEmpty && !lastInitial.isEmpty {
-            return "\(firstInitial)\(lastInitial)"
-        } else if !firstInitial.isEmpty {
-            return firstInitial
-        } else if !lastInitial.isEmpty {
-            return lastInitial
-        } else {
+        guard let name = user?.name?.trimmingCharacters(in: .whitespaces), !name.isEmpty else {
             return "U"
         }
+        let parts = name.split(separator: " ")
+        if parts.count >= 2 {
+            return "\(parts[0].prefix(1))\(parts[1].prefix(1))".uppercased()
+        }
+        return String(name.prefix(1)).uppercased()
     }
 
     private func timeAgo(from dateString: String) -> String {
@@ -265,7 +248,6 @@ extension View {
 }
 
 #Preview {
-    @State var isPresented = true
-    return CommentsView(trackId: 1, isPresented: $isPresented)
+    CommentsView(trackId: 1)
         .environment(\.apiClient, ApiClient(sessionManager: SessionManager()))
 }

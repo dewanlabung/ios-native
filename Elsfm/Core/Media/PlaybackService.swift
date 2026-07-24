@@ -36,7 +36,7 @@ final class PlaybackService {
 
     // MARK: - Sub-services
 
-    private(set) lazy var sleepTimer = SleepTimer(playerState: state)
+    private(set) var sleepTimer: SleepTimer!
 
     // MARK: - Private: API
 
@@ -49,6 +49,7 @@ final class PlaybackService {
 
     private init() {
         trackApi = TrackApi(client: ApiClient())
+        sleepTimer = SleepTimer(playerState: state)
         configureAudioSession()
         attachPeriodicTimeObserver()
         attachPlayerObservations()

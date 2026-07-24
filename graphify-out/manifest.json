@@ -1,0 +1,667 @@
+{
+  "Elsfm/App/AuthRootView.swift": {
+    "mtime": 1784811583.9340937,
+    "ast_hash": "223743518ab479dac406ac02e629e2f0",
+    "semantic_hash": "223743518ab479dac406ac02e629e2f0"
+  },
+  "Elsfm/App/ElsfmApp.swift": {
+    "mtime": 1784811560.7208798,
+    "ast_hash": "4e73eb4a3941243b8bf76d61277d04a4",
+    "semantic_hash": "4e73eb4a3941243b8bf76d61277d04a4"
+  },
+  "Elsfm/App/ElsfmNavigation.swift": {
+    "mtime": 1784811613.5877,
+    "ast_hash": "ac747322cac8241590f1db800e1135c1",
+    "semantic_hash": "ac747322cac8241590f1db800e1135c1"
+  },
+  "Elsfm/App/MainTabView.swift": {
+    "mtime": 1784811600.001235,
+    "ast_hash": "a23588afffee3f7aabbd776657931ae0",
+    "semantic_hash": "a23588afffee3f7aabbd776657931ae0"
+  },
+  "Elsfm/App/RootView.swift": {
+    "mtime": 1784811572.6611028,
+    "ast_hash": "c2860ff90f6394bfb427b0c91272e553",
+    "semantic_hash": "c2860ff90f6394bfb427b0c91272e553"
+  },
+  "Elsfm/Core/Common/Extensions.swift": {
+    "mtime": 1784811184.1845613,
+    "ast_hash": "ec96423213ede9d8e535f55b9c745779",
+    "semantic_hash": "ec96423213ede9d8e535f55b9c745779"
+  },
+  "Elsfm/Core/Common/InfiniteScrollModifier.swift": {
+    "mtime": 1784811192.1868658,
+    "ast_hash": "c3d0c9cca0ab95ee085e1e2041c18bef",
+    "semantic_hash": "c3d0c9cca0ab95ee085e1e2041c18bef"
+  },
+  "Elsfm/Core/Database/DownloadedTrack.swift": {
+    "mtime": 1784811095.190008,
+    "ast_hash": "1b07f46cbe4db875b11bd49596e3388b",
+    "semantic_hash": "1b07f46cbe4db875b11bd49596e3388b"
+  },
+  "Elsfm/Core/Database/DownloadsRepository.swift": {
+    "mtime": 1784811106.5415688,
+    "ast_hash": "3492fe06d20f8e3945c44cdb84a57d17",
+    "semantic_hash": "3492fe06d20f8e3945c44cdb84a57d17"
+  },
+  "Elsfm/Core/Database/ElsfmDatabase.swift": {
+    "mtime": 1784811098.4736497,
+    "ast_hash": "43061fa89e5969e94cb265fd3be3bf50",
+    "semantic_hash": "43061fa89e5969e94cb265fd3be3bf50"
+  },
+  "Elsfm/Core/DesignSystem/AsyncImageView.swift": {
+    "mtime": 1784811220.3515606,
+    "ast_hash": "411ec629a8a8c316f61c8b1309a45689",
+    "semantic_hash": "411ec629a8a8c316f61c8b1309a45689"
+  },
+  "Elsfm/Core/DesignSystem/Color+Tokens.swift": {
+    "mtime": 1784811207.204019,
+    "ast_hash": "e9dd12fa13ec00e1c84126a7908cf6c6",
+    "semantic_hash": "e9dd12fa13ec00e1c84126a7908cf6c6"
+  },
+  "Elsfm/Core/DesignSystem/Font+Tokens.swift": {
+    "mtime": 1784811213.6800535,
+    "ast_hash": "e33217cf73a66cb5c72985938882cd25",
+    "semantic_hash": "e33217cf73a66cb5c72985938882cd25"
+  },
+  "Elsfm/Core/DesignSystem/LikeButton.swift": {
+    "mtime": 1784811242.4457788,
+    "ast_hash": "464875a34c155ee843dd878e233117ac",
+    "semantic_hash": "464875a34c155ee843dd878e233117ac"
+  },
+  "Elsfm/Core/DesignSystem/OfflineBanner.swift": {
+    "mtime": 1784811261.7069032,
+    "ast_hash": "74cfe4746d2672099ee021a21720c9fa",
+    "semantic_hash": "74cfe4746d2672099ee021a21720c9fa"
+  },
+  "Elsfm/Core/DesignSystem/TrackContextMenu.swift": {
+    "mtime": 1784811253.4805691,
+    "ast_hash": "dabcf89ce44a9a74ac827bb73a045377",
+    "semantic_hash": "dabcf89ce44a9a74ac827bb73a045377"
+  },
+  "Elsfm/Core/DesignSystem/TrackRow.swift": {
+    "mtime": 1784811234.104683,
+    "ast_hash": "c30cc533591a59f5dc5fb96271de5a9b",
+    "semantic_hash": "c30cc533591a59f5dc5fb96271de5a9b"
+  },
+  "Elsfm/Core/Media/PlaybackService.swift": {
+    "mtime": 1784839104.6394138,
+    "ast_hash": "317a6376db4f72ee9f5019ee8ac4847f",
+    "semantic_hash": "317a6376db4f72ee9f5019ee8ac4847f"
+  },
+  "Elsfm/Core/Media/PlayerState.swift": {
+    "mtime": 1784811165.8200958,
+    "ast_hash": "6089387a3b2357602b9455868186c14f",
+    "semantic_hash": "6089387a3b2357602b9455868186c14f"
+  },
+  "Elsfm/Core/Media/ShakeDetector.swift": {
+    "mtime": 1784838916.9421592,
+    "ast_hash": "196a308728f30b607a35013923ab1b5f",
+    "semantic_hash": "196a308728f30b607a35013923ab1b5f"
+  },
+  "Elsfm/Core/Media/SleepTimer.swift": {
+    "mtime": 1784811179.270417,
+    "ast_hash": "472f749da32d0bb0071b10a494ccb340",
+    "semantic_hash": "472f749da32d0bb0071b10a494ccb340"
+  },
+  "Elsfm/Core/Models/Album.swift": {
+    "mtime": 1784810516.0020642,
+    "ast_hash": "187ded73654a419738db765f59096474",
+    "semantic_hash": "187ded73654a419738db765f59096474"
+  },
+  "Elsfm/Core/Models/ApiError.swift": {
+    "mtime": 1784810585.169135,
+    "ast_hash": "e64db392df655a5fda5dbfc74ccc2d41",
+    "semantic_hash": "e64db392df655a5fda5dbfc74ccc2d41"
+  },
+  "Elsfm/Core/Models/AppNotification.swift": {
+    "mtime": 1784810572.1641881,
+    "ast_hash": "b854fa7514cd40de1fd2f66a270801da",
+    "semantic_hash": "b854fa7514cd40de1fd2f66a270801da"
+  },
+  "Elsfm/Core/Models/Artist.swift": {
+    "mtime": 1784810512.2614555,
+    "ast_hash": "350502e3638b82786d79c8f0038e77cd",
+    "semantic_hash": "350502e3638b82786d79c8f0038e77cd"
+  },
+  "Elsfm/Core/Models/ArtistFollower.swift": {
+    "mtime": 1784810518.521863,
+    "ast_hash": "75dcfdf002787cdf94abac5e0ab4c30e",
+    "semantic_hash": "75dcfdf002787cdf94abac5e0ab4c30e"
+  },
+  "Elsfm/Core/Models/Channel.swift": {
+    "mtime": 1784810525.7041159,
+    "ast_hash": "b186a9b4c2a1210aa2a756c11afd0858",
+    "semantic_hash": "b186a9b4c2a1210aa2a756c11afd0858"
+  },
+  "Elsfm/Core/Models/Comment.swift": {
+    "mtime": 1784810575.4990835,
+    "ast_hash": "e75bf4718ab61a61e45d538f72619ef4",
+    "semantic_hash": "e75bf4718ab61a61e45d538f72619ef4"
+  },
+  "Elsfm/Core/Models/CompletePasswordResetRequest.swift": {
+    "mtime": 1784810558.7715294,
+    "ast_hash": "f6e0073b5cdfbe9e22de53b56a044b55",
+    "semantic_hash": "f6e0073b5cdfbe9e22de53b56a044b55"
+  },
+  "Elsfm/Core/Models/DiscoverySections.swift": {
+    "mtime": 1784810565.4206085,
+    "ast_hash": "9041f674d820e064cb5021f3f6ce1805",
+    "semantic_hash": "9041f674d820e064cb5021f3f6ce1805"
+  },
+  "Elsfm/Core/Models/FileEntry.swift": {
+    "mtime": 1784810590.079764,
+    "ast_hash": "1367f4bcc3c226b309bb86ae8e19bf6b",
+    "semantic_hash": "1367f4bcc3c226b309bb86ae8e19bf6b"
+  },
+  "Elsfm/Core/Models/FollowUser.swift": {
+    "mtime": 1784810595.9650652,
+    "ast_hash": "b58164d79ab4c80a667e56e78ba31094",
+    "semantic_hash": "b58164d79ab4c80a667e56e78ba31094"
+  },
+  "Elsfm/Core/Models/LibrarySections.swift": {
+    "mtime": 1784810568.1982496,
+    "ast_hash": "d8835ddd19e23c7dcd566e21195f5291",
+    "semantic_hash": "d8835ddd19e23c7dcd566e21195f5291"
+  },
+  "Elsfm/Core/Models/LoginRequest.swift": {
+    "mtime": 1784810540.9941556,
+    "ast_hash": "431ea200856288d74e8df35be23e6d02",
+    "semantic_hash": "431ea200856288d74e8df35be23e6d02"
+  },
+  "Elsfm/Core/Models/LoginResponse.swift": {
+    "mtime": 1784838764.6927705,
+    "ast_hash": "51da43679b0e3638869722d6c89e6cf5",
+    "semantic_hash": "51da43679b0e3638869722d6c89e6cf5"
+  },
+  "Elsfm/Core/Models/PasswordResetRequest.swift": {
+    "mtime": 1784810555.654746,
+    "ast_hash": "34b4ebbaac5260290a5aec02f515f50e",
+    "semantic_hash": "34b4ebbaac5260290a5aec02f515f50e"
+  },
+  "Elsfm/Core/Models/Permission.swift": {
+    "mtime": 1784810593.308716,
+    "ast_hash": "358aa823bcd54a5c6b1423ab127cd441",
+    "semantic_hash": "358aa823bcd54a5c6b1423ab127cd441"
+  },
+  "Elsfm/Core/Models/Playlist.swift": {
+    "mtime": 1784810521.6784751,
+    "ast_hash": "70ce286d97246c08da84537d5ce55ab1",
+    "semantic_hash": "70ce286d97246c08da84537d5ce55ab1"
+  },
+  "Elsfm/Core/Models/RegisterRequest.swift": {
+    "mtime": 1784810549.648186,
+    "ast_hash": "2902599f428ed69aeda9d327f3ca55f8",
+    "semantic_hash": "2902599f428ed69aeda9d327f3ca55f8"
+  },
+  "Elsfm/Core/Models/RegisterResponse.swift": {
+    "mtime": 1784810553.1578767,
+    "ast_hash": "ddd23ed4850210ba20c8d311cce0a3cb",
+    "semantic_hash": "ddd23ed4850210ba20c8d311cce0a3cb"
+  },
+  "Elsfm/Core/Models/SearchResult.swift": {
+    "mtime": 1784810561.7034955,
+    "ast_hash": "e2c55d2955b724b566456925e8fa94e3",
+    "semantic_hash": "e2c55d2955b724b566456925e8fa94e3"
+  },
+  "Elsfm/Core/Models/Tag.swift": {
+    "mtime": 1784810581.480226,
+    "ast_hash": "749224d88a3aa20dc13dd1f994511d3b",
+    "semantic_hash": "749224d88a3aa20dc13dd1f994511d3b"
+  },
+  "Elsfm/Core/Models/Track.swift": {
+    "mtime": 1784810509.3274343,
+    "ast_hash": "2b2502a53d22ba22924e1f2a62e97880",
+    "semantic_hash": "2b2502a53d22ba22924e1f2a62e97880"
+  },
+  "Elsfm/Core/Models/User.swift": {
+    "mtime": 1784810529.34404,
+    "ast_hash": "15611d19b88ba51a94972b39a2efadd7",
+    "semantic_hash": "15611d19b88ba51a94972b39a2efadd7"
+  },
+  "Elsfm/Core/Models/UserProfile.swift": {
+    "mtime": 1784810533.0241213,
+    "ast_hash": "60c12b325da18bdbdb86a2ce542c2c13",
+    "semantic_hash": "60c12b325da18bdbdb86a2ce542c2c13"
+  },
+  "Elsfm/Core/Models/UserSessionInfo.swift": {
+    "mtime": 1784810537.3861685,
+    "ast_hash": "03e2b5b2d09d6c9eb39f348a790f2a4f",
+    "semantic_hash": "03e2b5b2d09d6c9eb39f348a790f2a4f"
+  },
+  "Elsfm/Core/Network/Api/AccountApi.swift": {
+    "mtime": 1784839495.1245482,
+    "ast_hash": "c28373e3047ce58d921652d37e2ae358",
+    "semantic_hash": "c28373e3047ce58d921652d37e2ae358"
+  },
+  "Elsfm/Core/Network/Api/AlbumApi.swift": {
+    "mtime": 1784811001.0896099,
+    "ast_hash": "126e49915edf987893f9c5e4aae29a52",
+    "semantic_hash": "126e49915edf987893f9c5e4aae29a52"
+  },
+  "Elsfm/Core/Network/Api/ArtistApi.swift": {
+    "mtime": 1784811008.4709477,
+    "ast_hash": "850a52b9aa595a392637c42295773d10",
+    "semantic_hash": "850a52b9aa595a392637c42295773d10"
+  },
+  "Elsfm/Core/Network/Api/AuthApi.swift": {
+    "mtime": 1784838773.9142628,
+    "ast_hash": "98afdb40228cc1795d66dbeada49177a",
+    "semantic_hash": "98afdb40228cc1795d66dbeada49177a"
+  },
+  "Elsfm/Core/Network/Api/AuthApiProtocol.swift": {
+    "mtime": 1784839235.9323232,
+    "ast_hash": "9d5fa63015d3b30e6a78c30b0b040f69",
+    "semantic_hash": "9d5fa63015d3b30e6a78c30b0b040f69"
+  },
+  "Elsfm/Core/Network/Api/BillingApi.swift": {
+    "mtime": 1784811052.479334,
+    "ast_hash": "99089d874ac689e71e47db9dd9e0c4c2",
+    "semantic_hash": "99089d874ac689e71e47db9dd9e0c4c2"
+  },
+  "Elsfm/Core/Network/Api/ChannelApi.swift": {
+    "mtime": 1784838813.1541202,
+    "ast_hash": "bb0f3f3576a4f614debc9637d3c4b9ec",
+    "semantic_hash": "bb0f3f3576a4f614debc9637d3c4b9ec"
+  },
+  "Elsfm/Core/Network/Api/CommentApi.swift": {
+    "mtime": 1784811044.4103506,
+    "ast_hash": "d29c2e110500f4ebb9c30d0bfa9b3cb6",
+    "semantic_hash": "d29c2e110500f4ebb9c30d0bfa9b3cb6"
+  },
+  "Elsfm/Core/Network/Api/LyricsApi.swift": {
+    "mtime": 1784811030.5762448,
+    "ast_hash": "7c4e784f71f817962b8dc8c75fb273e1",
+    "semantic_hash": "7c4e784f71f817962b8dc8c75fb273e1"
+  },
+  "Elsfm/Core/Network/Api/NotificationsApi.swift": {
+    "mtime": 1784839272.5525663,
+    "ast_hash": "eeb8dfd85242b36b72243ce0cb109ce7",
+    "semantic_hash": "eeb8dfd85242b36b72243ce0cb109ce7"
+  },
+  "Elsfm/Core/Network/Api/PlaylistApi.swift": {
+    "mtime": 1784838254.6794577,
+    "ast_hash": "ebc901e07d0337e8fa018d47d6ff6ab6",
+    "semantic_hash": "ebc901e07d0337e8fa018d47d6ff6ab6"
+  },
+  "Elsfm/Core/Network/Api/ProfileApi.swift": {
+    "mtime": 1784811038.191567,
+    "ast_hash": "ff089a1e6eda681d8b9c4d7b2b7d7e69",
+    "semantic_hash": "ff089a1e6eda681d8b9c4d7b2b7d7e69"
+  },
+  "Elsfm/Core/Network/Api/RepostApi.swift": {
+    "mtime": 1784811048.289726,
+    "ast_hash": "a10c110abc809f5ff38ba5e50d083fec",
+    "semantic_hash": "a10c110abc809f5ff38ba5e50d083fec"
+  },
+  "Elsfm/Core/Network/Api/SearchApi.swift": {
+    "mtime": 1784811026.896892,
+    "ast_hash": "15859e1ebd339a3aa36f67ee5bee7cf7",
+    "semantic_hash": "15859e1ebd339a3aa36f67ee5bee7cf7"
+  },
+  "Elsfm/Core/Network/Api/SessionsApi.swift": {
+    "mtime": 1784811061.7122767,
+    "ast_hash": "f75b8c9fdc9069a1287d1f984d5ad930",
+    "semantic_hash": "f75b8c9fdc9069a1287d1f984d5ad930"
+  },
+  "Elsfm/Core/Network/Api/TrackApi.swift": {
+    "mtime": 1784839092.480103,
+    "ast_hash": "8bfc5a70cbad5f366e6f9ab8d8c9a73a",
+    "semantic_hash": "8bfc5a70cbad5f366e6f9ab8d8c9a73a"
+  },
+  "Elsfm/Core/Network/Api/TrackListApi.swift": {
+    "mtime": 1784810995.9696298,
+    "ast_hash": "f3a6d845bf42d7d2e1c7045b2d0db58c",
+    "semantic_hash": "f3a6d845bf42d7d2e1c7045b2d0db58c"
+  },
+  "Elsfm/Core/Network/Api/UserApi.swift": {
+    "mtime": 1784811034.5333104,
+    "ast_hash": "401642e82025049c161d3c7753dfaf9c",
+    "semantic_hash": "401642e82025049c161d3c7753dfaf9c"
+  },
+  "Elsfm/Core/Network/ApiClient.swift": {
+    "mtime": 1784838760.9050322,
+    "ast_hash": "014abb378785ab12f960bbb27978b82d",
+    "semantic_hash": "014abb378785ab12f960bbb27978b82d"
+  },
+  "Elsfm/Core/Network/ApiResult.swift": {
+    "mtime": 1784810501.026341,
+    "ast_hash": "061a448962b5eba5a238078e3be7b9db",
+    "semantic_hash": "061a448962b5eba5a238078e3be7b9db"
+  },
+  "Elsfm/Core/Network/Auth/SessionEvent.swift": {
+    "mtime": 1784810507.3636,
+    "ast_hash": "2ebc9d7b90c5d04d553728eb54b99719",
+    "semantic_hash": "2ebc9d7b90c5d04d553728eb54b99719"
+  },
+  "Elsfm/Core/Network/Auth/SessionManager.swift": {
+    "mtime": 1784810520.9257402,
+    "ast_hash": "417ffdfedf2aa34abd39103420ea45c7",
+    "semantic_hash": "417ffdfedf2aa34abd39103420ea45c7"
+  },
+  "Elsfm/Core/Network/Auth/TokenStore.swift": {
+    "mtime": 1784810512.3156874,
+    "ast_hash": "e5aef05b1552fcfbb65995486728ddb2",
+    "semantic_hash": "e5aef05b1552fcfbb65995486728ddb2"
+  },
+  "Elsfm/Core/Network/ElsfmApiConfig.swift": {
+    "mtime": 1784810503.855488,
+    "ast_hash": "6473342ae17b3b970c7e24aefc7d2a08",
+    "semantic_hash": "6473342ae17b3b970c7e24aefc7d2a08"
+  },
+  "Elsfm/Features/Artist/ArtistView.swift": {
+    "mtime": 1784839060.022699,
+    "ast_hash": "bc45782d73ce53d78189403852a80722",
+    "semantic_hash": "bc45782d73ce53d78189403852a80722"
+  },
+  "Elsfm/Features/Artist/ArtistViewModel.swift": {
+    "mtime": 1784838481.6652055,
+    "ast_hash": "350ea8a06d1c92a755b27d36ed82229e",
+    "semantic_hash": "350ea8a06d1c92a755b27d36ed82229e"
+  },
+  "Elsfm/Features/Auth/EmailVerifyView.swift": {
+    "mtime": 1784811798.1590886,
+    "ast_hash": "c764d1271425d0da923943b402ca8458",
+    "semantic_hash": "c764d1271425d0da923943b402ca8458"
+  },
+  "Elsfm/Features/Auth/EmailVerifyViewModel.swift": {
+    "mtime": 1784811774.494648,
+    "ast_hash": "28e62f3fb7661af1fed5b2f4d8043aca",
+    "semantic_hash": "28e62f3fb7661af1fed5b2f4d8043aca"
+  },
+  "Elsfm/Features/Auth/LoginView.swift": {
+    "mtime": 1784811741.9145503,
+    "ast_hash": "8216dc314a3b61c8c306c66492b505c8",
+    "semantic_hash": "8216dc314a3b61c8c306c66492b505c8"
+  },
+  "Elsfm/Features/Auth/LoginViewModel.swift": {
+    "mtime": 1784839239.6424837,
+    "ast_hash": "61aa9b53ceedaa47b9639cb8d9340601",
+    "semantic_hash": "61aa9b53ceedaa47b9639cb8d9340601"
+  },
+  "Elsfm/Features/Auth/PasswordResetView.swift": {
+    "mtime": 1784811828.7049866,
+    "ast_hash": "d4b9f01294c3f74f22ec1ae8a9712ede",
+    "semantic_hash": "d4b9f01294c3f74f22ec1ae8a9712ede"
+  },
+  "Elsfm/Features/Auth/PasswordResetViewModel.swift": {
+    "mtime": 1784811808.0832396,
+    "ast_hash": "c585b63d21a2a22fa7fd49eed535aaa7",
+    "semantic_hash": "c585b63d21a2a22fa7fd49eed535aaa7"
+  },
+  "Elsfm/Features/Auth/SignupView.swift": {
+    "mtime": 1784811765.8935447,
+    "ast_hash": "5dc420b5f51bc52cc42615114d50a46e",
+    "semantic_hash": "5dc420b5f51bc52cc42615114d50a46e"
+  },
+  "Elsfm/Features/Auth/SignupViewModel.swift": {
+    "mtime": 1784811750.6880476,
+    "ast_hash": "472b2648980ab335c396a13429aec2ea",
+    "semantic_hash": "472b2648980ab335c396a13429aec2ea"
+  },
+  "Elsfm/Features/Comments/CommentsView.swift": {
+    "mtime": 1784839400.467619,
+    "ast_hash": "506cffe343a3509d37ca73a3fcb4925a",
+    "semantic_hash": "506cffe343a3509d37ca73a3fcb4925a"
+  },
+  "Elsfm/Features/Comments/CommentsViewModel.swift": {
+    "mtime": 1784839353.9435568,
+    "ast_hash": "b83ad93abeecf7e06193f0bc782c9a36",
+    "semantic_hash": "b83ad93abeecf7e06193f0bc782c9a36"
+  },
+  "Elsfm/Features/Discovery/DiscoveryView.swift": {
+    "mtime": 1784838826.4585445,
+    "ast_hash": "08c84d2aabd11e1cd2635304a329b87d",
+    "semantic_hash": "08c84d2aabd11e1cd2635304a329b87d"
+  },
+  "Elsfm/Features/Discovery/DiscoveryViewModel.swift": {
+    "mtime": 1784838808.0130498,
+    "ast_hash": "6a591c9b54863f022c76f6956fa5bbf2",
+    "semantic_hash": "6a591c9b54863f022c76f6956fa5bbf2"
+  },
+  "Elsfm/Features/Discovery/SectionViews/AlbumSectionView.swift": {
+    "mtime": 1784812137.597579,
+    "ast_hash": "54222f128e30fb2a1a0b46d61e506bb6",
+    "semantic_hash": "54222f128e30fb2a1a0b46d61e506bb6"
+  },
+  "Elsfm/Features/Discovery/SectionViews/ArtistSectionView.swift": {
+    "mtime": 1784812146.8289335,
+    "ast_hash": "5af8c00507b5e815cd0c8856a74ff9f1",
+    "semantic_hash": "5af8c00507b5e815cd0c8856a74ff9f1"
+  },
+  "Elsfm/Features/Discovery/SectionViews/TrackSectionView.swift": {
+    "mtime": 1784812126.0692523,
+    "ast_hash": "d113ef7091422f270f2b78cc1207ce03",
+    "semantic_hash": "d113ef7091422f270f2b78cc1207ce03"
+  },
+  "Elsfm/Features/Downloads/DownloadsView.swift": {
+    "mtime": 1784839263.5835638,
+    "ast_hash": "e2a85b18741cf7caa24fe38d1826ef71",
+    "semantic_hash": "e2a85b18741cf7caa24fe38d1826ef71"
+  },
+  "Elsfm/Features/Downloads/DownloadsViewModel.swift": {
+    "mtime": 1784839244.8691092,
+    "ast_hash": "29a169c54174689ca6e6d951073f23e0",
+    "semantic_hash": "29a169c54174689ca6e6d951073f23e0"
+  },
+  "Elsfm/Features/Library/LibraryView.swift": {
+    "mtime": 1784838193.7487755,
+    "ast_hash": "2480a1e4f218d5ba307670bdecfde0d6",
+    "semantic_hash": "2480a1e4f218d5ba307670bdecfde0d6"
+  },
+  "Elsfm/Features/Library/LibraryViewModel.swift": {
+    "mtime": 1784838159.9190361,
+    "ast_hash": "bf39dbc4035f779adfe32219101a613b",
+    "semantic_hash": "bf39dbc4035f779adfe32219101a613b"
+  },
+  "Elsfm/Features/Library/PlaylistDetailView.swift": {
+    "mtime": 1784838243.2809217,
+    "ast_hash": "9550d1a0064cdc3c0b381c5d95f9686c",
+    "semantic_hash": "9550d1a0064cdc3c0b381c5d95f9686c"
+  },
+  "Elsfm/Features/Library/PlaylistDetailViewModel.swift": {
+    "mtime": 1784838212.9493394,
+    "ast_hash": "bb7a15a2a212c8639d1349b48007d818",
+    "semantic_hash": "bb7a15a2a212c8639d1349b48007d818"
+  },
+  "Elsfm/Features/Notifications/NotificationsView.swift": {
+    "mtime": 1784839355.7200303,
+    "ast_hash": "14b72aac6f58adca871181c0fcfbbb0c",
+    "semantic_hash": "14b72aac6f58adca871181c0fcfbbb0c"
+  },
+  "Elsfm/Features/Notifications/NotificationsViewModel.swift": {
+    "mtime": 1784839332.182944,
+    "ast_hash": "faaca0b5ec838b5f215b874ee66a1b53",
+    "semantic_hash": "faaca0b5ec838b5f215b874ee66a1b53"
+  },
+  "Elsfm/Features/Player/FullPlayerView.swift": {
+    "mtime": 1784812487.715808,
+    "ast_hash": "26e137b43da89366a347cea0043d9519",
+    "semantic_hash": "26e137b43da89366a347cea0043d9519"
+  },
+  "Elsfm/Features/Player/LyricsView.swift": {
+    "mtime": 1784812389.95036,
+    "ast_hash": "50ba198d4cca8239db0c322f1661fef4",
+    "semantic_hash": "50ba198d4cca8239db0c322f1661fef4"
+  },
+  "Elsfm/Features/Player/MiniPlayerView.swift": {
+    "mtime": 1784812269.5303538,
+    "ast_hash": "45012b8b0d9d68318973f18e91d59e90",
+    "semantic_hash": "45012b8b0d9d68318973f18e91d59e90"
+  },
+  "Elsfm/Features/Player/PlayerMenuView.swift": {
+    "mtime": 1784812427.359392,
+    "ast_hash": "a181cb9a39f7b604e5fc28d6a3468573",
+    "semantic_hash": "a181cb9a39f7b604e5fc28d6a3468573"
+  },
+  "Elsfm/Features/Player/PlayerViewModel.swift": {
+    "mtime": 1784812252.641156,
+    "ast_hash": "3547c12953c6e7dddfb4e9a88d9e4f45",
+    "semantic_hash": "3547c12953c6e7dddfb4e9a88d9e4f45"
+  },
+  "Elsfm/Features/Profile/ProfileView.swift": {
+    "mtime": 1784838053.8543754,
+    "ast_hash": "2c86e858966cfa5e45662c2cdc72f16c",
+    "semantic_hash": "2c86e858966cfa5e45662c2cdc72f16c"
+  },
+  "Elsfm/Features/Profile/ProfileViewModel.swift": {
+    "mtime": 1784838020.3043752,
+    "ast_hash": "63bf100306abe76bd1b1d0552e3e5df5",
+    "semantic_hash": "63bf100306abe76bd1b1d0552e3e5df5"
+  },
+  "Elsfm/Features/Search/SearchView.swift": {
+    "mtime": 1784811944.8868651,
+    "ast_hash": "1304440bd33a066c4c17badbab4f31d2",
+    "semantic_hash": "1304440bd33a066c4c17badbab4f31d2"
+  },
+  "Elsfm/Features/Search/SearchViewModel.swift": {
+    "mtime": 1784811909.0563376,
+    "ast_hash": "49988ce21926330fb4138bfa167b1be7",
+    "semantic_hash": "49988ce21926330fb4138bfa167b1be7"
+  },
+  "Elsfm/Features/Subscriptions/SubscriptionsView.swift": {
+    "mtime": 1784839179.8365355,
+    "ast_hash": "65c5262adb7876828f19f817faab35ba",
+    "semantic_hash": "65c5262adb7876828f19f817faab35ba"
+  },
+  "Elsfm/Features/Subscriptions/SubscriptionsViewModel.swift": {
+    "mtime": 1784839152.3795125,
+    "ast_hash": "bb0c495fcc4fb37fdcb42e7d34ac31a0",
+    "semantic_hash": "bb0c495fcc4fb37fdcb42e7d34ac31a0"
+  },
+  "Elsfm/Features/UserProfile/UserProfileView.swift": {
+    "mtime": 1784838090.8705578,
+    "ast_hash": "24d58012eb7738bc961d421e3f05f87e",
+    "semantic_hash": "24d58012eb7738bc961d421e3f05f87e"
+  },
+  "Elsfm/Features/UserProfile/UserProfileViewModel.swift": {
+    "mtime": 1784838065.9078875,
+    "ast_hash": "74dc467345ee5cc24284d2f6768da90d",
+    "semantic_hash": "74dc467345ee5cc24284d2f6768da90d"
+  },
+  "Elsfm/Resources/Assets.xcassets/AccentColor.colorset/Contents.json": {
+    "mtime": 1784839098.3083456,
+    "ast_hash": "00fb402cee946d8fb8e3a0786ff9d18d",
+    "semantic_hash": "00fb402cee946d8fb8e3a0786ff9d18d"
+  },
+  "Elsfm/Resources/Assets.xcassets/AppIcon.appiconset/Contents.json": {
+    "mtime": 1784839096.654375,
+    "ast_hash": "c1f7c28e16b9e6b778d5285de439da35",
+    "semantic_hash": "c1f7c28e16b9e6b778d5285de439da35"
+  },
+  "Elsfm/Resources/Assets.xcassets/Contents.json": {
+    "mtime": 1784839097.6283925,
+    "ast_hash": "ee613c71a35a7100f8a141a67180f5a7",
+    "semantic_hash": "ee613c71a35a7100f8a141a67180f5a7"
+  },
+  "ElsfmTests/Auth/LoginViewModelTests.swift": {
+    "mtime": 1784839334.087508,
+    "ast_hash": "8cb8714e34e4903757483290610a7cf4",
+    "semantic_hash": "8cb8714e34e4903757483290610a7cf4"
+  },
+  "ElsfmTests/Models/TrackCodableTests.swift": {
+    "mtime": 1784839284.0203066,
+    "ast_hash": "9a91c6e5dfecc7185355f260971d5f02",
+    "semantic_hash": "9a91c6e5dfecc7185355f260971d5f02"
+  },
+  "ElsfmTests/Network/ApiResultTests.swift": {
+    "mtime": 1784839259.5927117,
+    "ast_hash": "09a2f2cd0f2ea47a57b481c71c61f685",
+    "semantic_hash": "09a2f2cd0f2ea47a57b481c71c61f685"
+  },
+  "ElsfmTests/Player/PlayerStateTests.swift": {
+    "mtime": 1784839301.060997,
+    "ast_hash": "cc7ac4144158a3df46f82b06aab25c0a",
+    "semantic_hash": "cc7ac4144158a3df46f82b06aab25c0a"
+  },
+  ".claude/skills/elsfm-api-endpoints/SKILL.md": {
+    "mtime": 1784838924.704203,
+    "ast_hash": "7f81d908087e024c8104a966cd412f18",
+    "semantic_hash": "7f81d908087e024c8104a966cd412f18"
+  },
+  ".claude/skills/elsfm-features/SKILL.md": {
+    "mtime": 1784838924.7077885,
+    "ast_hash": "bcb09c02e39ffe7b7d3ce2bd7ab10d2b",
+    "semantic_hash": "bcb09c02e39ffe7b7d3ce2bd7ab10d2b"
+  },
+  ".claude/skills/elsfm-ios-build/SKILL.md": {
+    "mtime": 1784838968.0702035,
+    "ast_hash": "338779a98793d86ff57d082da1d2a107",
+    "semantic_hash": "338779a98793d86ff57d082da1d2a107"
+  },
+  ".claude/skills/elsfm-laravel-backend/SKILL.md": {
+    "mtime": 1784838924.8052611,
+    "ast_hash": "e6280ffb792f05dc94869eb51962d9a7",
+    "semantic_hash": "e6280ffb792f05dc94869eb51962d9a7"
+  },
+  ".claude/skills/elsfm-laravel-backend/references/SKILL.md": {
+    "mtime": 1784838924.7876074,
+    "ast_hash": "29c056ef9810fd34393ac263e2130f32",
+    "semantic_hash": "29c056ef9810fd34393ac263e2130f32"
+  },
+  ".claude/skills/elsfm-laravel-backend/references/authorization.md": {
+    "mtime": 1784838924.7717564,
+    "ast_hash": "b6de26c6bb879db53e67d01aa0e118ec",
+    "semantic_hash": "b6de26c6bb879db53e67d01aa0e118ec"
+  },
+  ".claude/skills/elsfm-laravel-backend/references/controllers-pattern.md": {
+    "mtime": 1784838924.787166,
+    "ast_hash": "be681391b070bc384b47b51ff2d10e2e",
+    "semantic_hash": "be681391b070bc384b47b51ff2d10e2e"
+  },
+  ".claude/skills/elsfm-laravel-backend/references/datasource-pagination.md": {
+    "mtime": 1784838924.7494717,
+    "ast_hash": "83f2cfc89c914d210f9efed98c9ad7c5",
+    "semantic_hash": "83f2cfc89c914d210f9efed98c9ad7c5"
+  },
+  ".claude/skills/elsfm-laravel-backend/references/events-listeners.md": {
+    "mtime": 1784838924.8042834,
+    "ast_hash": "d48e7898478374772c6c9d6d2bf02a30",
+    "semantic_hash": "d48e7898478374772c6c9d6d2bf02a30"
+  },
+  ".claude/skills/elsfm-laravel-backend/references/models-relationships.md": {
+    "mtime": 1784838924.760183,
+    "ast_hash": "7d261fbf1e162c3da26d2a145d44fcc3",
+    "semantic_hash": "7d261fbf1e162c3da26d2a145d44fcc3"
+  },
+  ".claude/skills/elsfm-laravel-backend/references/services-pattern.md": {
+    "mtime": 1784838924.741179,
+    "ast_hash": "f496ea0ea6a02c47882c096eb1a30e34",
+    "semantic_hash": "f496ea0ea6a02c47882c096eb1a30e34"
+  },
+  ".claude/skills/elsfm-laravel-integration/SKILL.md": {
+    "mtime": 1784838924.836106,
+    "ast_hash": "a297a31a69accde526947784e8f7bb5e",
+    "semantic_hash": "a297a31a69accde526947784e8f7bb5e"
+  },
+  ".claude/skills/elsfm-laravel-integration/references/common-foundation.md": {
+    "mtime": 1784838924.8110201,
+    "ast_hash": "435cd31d6d8e65bc9475e6f284dd8bfe",
+    "semantic_hash": "435cd31d6d8e65bc9475e6f284dd8bfe"
+  },
+  ".claude/skills/elsfm-laravel-integration/references/error-handling.md": {
+    "mtime": 1784838924.8272123,
+    "ast_hash": "1d47ae8764dc2d95ebe8461ac502ebae",
+    "semantic_hash": "1d47ae8764dc2d95ebe8461ac502ebae"
+  },
+  ".claude/skills/elsfm-laravel-integration/references/flutter-client-example.md": {
+    "mtime": 1784838924.8350363,
+    "ast_hash": "fcb1305efd498a713acec2bf335473a3",
+    "semantic_hash": "fcb1305efd498a713acec2bf335473a3"
+  },
+  ".claude/skills/elsfm-laravel-integration/references/response-mapping.md": {
+    "mtime": 1784838924.8201978,
+    "ast_hash": "a7e9f1578e23e3ce81553d1c76f9f490",
+    "semantic_hash": "a7e9f1578e23e3ce81553d1c76f9f490"
+  },
+  "CLAUDE.md": {
+    "mtime": 1784838996.112813,
+    "ast_hash": "1d92596caec4bbea8f1a71da4610478b",
+    "semantic_hash": "1d92596caec4bbea8f1a71da4610478b"
+  },
+  "project.yml": {
+    "mtime": 1784810277.670333,
+    "ast_hash": "bdbf8b94e32c2ba8a550e248f6c4f16c",
+    "semantic_hash": "bdbf8b94e32c2ba8a550e248f6c4f16c"
+  }
+}

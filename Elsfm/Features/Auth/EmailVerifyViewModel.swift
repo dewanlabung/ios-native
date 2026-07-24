@@ -38,7 +38,7 @@ final class EmailVerifyViewModel {
             error = nil
             defer { isLoading = false }
 
-            let result = await authApi.verifyEmail(code: code, email: email)
+            let result = await authApi.verifyOtp(email: email, otp: code)
 
             switch result {
             case .success:

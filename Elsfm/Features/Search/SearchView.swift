@@ -116,7 +116,7 @@ struct SearchView: View {
             case .albums:
                 ForEach(viewModel.albumResults) { album in
                     NavigationLink(value: AppDestination.album(id: album.id)) {
-                        AlbumRow(album: album)
+                        SearchAlbumRow(album: album)
                     }
                     .listRowBackground(Color.elsfmBackground)
                     .listRowSeparator(.hidden)
@@ -134,7 +134,7 @@ struct SearchView: View {
             case .playlists:
                 ForEach(viewModel.playlistResults) { playlist in
                     NavigationLink(value: AppDestination.playlist(id: playlist.id)) {
-                        PlaylistRow(playlist: playlist)
+                        SearchPlaylistRow(playlist: playlist)
                     }
                     .listRowBackground(Color.elsfmBackground)
                     .listRowSeparator(.hidden)
@@ -167,7 +167,7 @@ struct SearchView: View {
     private var noResultsView: some View {
         SearchStateView(
             icon: "music.note.list",
-            title: "No results for "\(viewModel.query)"",
+            title: "No results for \"\(viewModel.query)\"",
             subtitle: "Try a different search term"
         )
     }
@@ -258,7 +258,7 @@ private struct SearchStateView: View {
 
 // MARK: - AlbumRow
 
-private struct AlbumRow: View {
+private struct SearchAlbumRow: View {
     let album: Album
 
     var body: some View {
@@ -327,7 +327,7 @@ private struct ArtistRow: View {
 
 // MARK: - PlaylistRow
 
-private struct PlaylistRow: View {
+private struct SearchPlaylistRow: View {
     let playlist: Playlist
 
     var body: some View {

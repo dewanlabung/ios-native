@@ -175,7 +175,7 @@ struct ProfileView: View {
         LazyVStack(spacing: 0) {
             ForEach(playlists) { playlist in
                 NavigationLink(value: AppDestination.playlist(id: playlist.id)) {
-                    PlaylistRow(playlist: playlist)
+                    ProfilePlaylistRow(playlist: playlist)
                 }
                 .buttonStyle(.plain)
                 .padding(.horizontal, 20)
@@ -297,7 +297,7 @@ private struct EditProfileSheet: View {
 
 /// A list row for a single `Playlist`, used inside ProfileView and
 /// UserProfileView.
-private struct PlaylistRow: View {
+private struct ProfilePlaylistRow: View {
     let playlist: Playlist
 
     var body: some View {
